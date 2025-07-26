@@ -1,11 +1,9 @@
-
-### **Report: Uber Fares Dataset Analysis**
-
-**Author:** Muheto Jess Rutayisire 
-**Student ID:** 26481
-**Course:** Introduction to Big Data Analytics (INSY 8413)
-**Instructor:** Prof. Eric Maniraguha
-**Date:** 2025-07-26
+# **Report: Uber Fares Dataset Analysis**
+- **Author:** Muheto Jess Rutayisire 
+- **Student ID:** 26481
+- **Course:** Introduction to Big Data Analytics (INSY 8413)
+- **Instructor:** Prof. Eric Maniraguha
+- **Date:** 2025-07-26
 
 ---
 #### **Introduction**
@@ -209,39 +207,35 @@ df.to_csv('enhanced_uber_fares.csv', index=False)
 #### Analysis & Results
 
 **Fare Distribution:** The distribution of fares is right-skewed, with the vast majority of rides costing between $5 and $25.
-![[Pasted image 20250726161139.png]] 
+
 
 **Fare vs. Distance:** There is a strong, positive correlation between `distance_km` and `fare_amount`. This confirms the primary driver of cost is the distance traveled. Outliers exist where short-distance trips have high fares, potentially indicating surge pricing or wait times.
 
-![[Pasted image 20250726161425.png]]
 #### **PowerBI Results**
 Iniatial Data analysis with Power BI
-![[Pasted image 20250726162839.png]]
+
 ##### Final Dashboard
-![[Pasted image 20250726163142.png]]
+
 
 *   **Hourly Trends:** Ride volume exhibits a clear bimodal pattern, peaking during the morning commute (around 8 AM) and again during the evening rush (5-7 PM). The highest peak occurs in the evening.
 
-![[Pasted image 20250726163357.png]]
 *Peak hours button selected*
 
 *   **Daily Trends:** Fridays and Saturdays are the busiest days of the week, indicating higher demand for leisure and social travel. Mid-week days (Tuesday-Thursday) show consistent commuter patterns.
-![[Pasted image 20250726164314.png]]
+
 *Distance traveled and Amount spent during the week*
 
-![[Pasted image 20250726164033.png]]
+
 *Data on Friday Rides (One of the busiest days)*
 
 *   **Monthly Trends:** The data shows some seasonality, with ride volume generally increasing in the spring and autumn months.
-![[Pasted image 20250726164608.png]]
+
 
 **Geospatial Analysis**
 The map visualization shows that the highest concentration of Uber rides originates in dense urban centers, with Manhattan being a primary hotspot.
 
-![[Pasted image 20250726165619.png]]
 *Map of the World showing concentration of Uber rides*
 
-![[Pasted image 20250726165008.png]]
 *Map of Manhattan, New York superimposed with ride data*
 
 The dataset did not include drop_off timestamps. thus it is impossible to calculate the actual ride duration. Distance was used as a proxy for ride length.
