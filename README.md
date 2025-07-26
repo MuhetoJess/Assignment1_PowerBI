@@ -112,6 +112,7 @@ sns.boxplot(y=df['passenger_count'])
 plt.title('Box Plot of Passenger Count')
 plt.show()
 ```
+![Box_plot](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output.png)
 
 ##### **Feature Engineering**
 New features such as `distance`,`hour`, `day_of_week`, and `peak_offpeak` indicators were created to support a more detailed analysis in Power BI.
@@ -166,6 +167,7 @@ plt.ylabel('Frequency')
 plt.xlim(0, 80) # Focusing on the most common fare range
 plt.show()
 ```
+![Histogram](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output2.png)
 
 The relationships between fare, distance, and time of day were then visualized.
 ```python
@@ -197,6 +199,9 @@ sns.heatmap(corr, annot=True, cmap='coolwarm')
 plt.title('Heat map of correlations')
 plt.show()
 ```
+![scatterplot](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output3.png)
+![boxplot](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output5.png)
+![heatmap](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output6.png)
 
 The final, enriched dataset was exported as `enhanced_uber_fares.csv`, ready for import into Power BI.
 ```python
@@ -207,35 +212,36 @@ df.to_csv('enhanced_uber_fares.csv', index=False)
 #### Analysis & Results
 
 **Fare Distribution:** The distribution of fares is right-skewed, with the vast majority of rides costing between $5 and $25.
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output2.png)
 
 **Fare vs. Distance:** There is a strong, positive correlation between `distance_km` and `fare_amount`. This confirms the primary driver of cost is the distance traveled. Outliers exist where short-distance trips have high fares, potentially indicating surge pricing or wait times.
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output3.png)
 
 #### **PowerBI Results**
 Iniatial Data analysis with Power BI
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%162805.png)
 ##### Final Dashboard
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%163127.png)
 
 *   **Hourly Trends:** Ride volume exhibits a clear bimodal pattern, peaking during the morning commute (around 8 AM) and again during the evening rush (5-7 PM). The highest peak occurs in the evening.
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%163344.png)
 *Peak hours button selected*
 
 *   **Daily Trends:** Fridays and Saturdays are the busiest days of the week, indicating higher demand for leisure and social travel. Mid-week days (Tuesday-Thursday) show consistent commuter patterns.
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164305.png)
 *Distance traveled and Amount spent during the week*
 
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164026.png)
 *Data on Friday Rides (One of the busiest days)*
 
 *   **Monthly Trends:** The data shows some seasonality, with ride volume generally increasing in the spring and autumn months.
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164551.png)
 
 **Geospatial Analysis**
 The map visualization shows that the highest concentration of Uber rides originates in dense urban centers, with Manhattan being a primary hotspot.
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%165614.png)
 *Map of the World showing concentration of Uber rides*
-
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164951.png)
 *Map of Manhattan, New York superimposed with ride data*
 
 The dataset did not include drop_off timestamps. thus it is impossible to calculate the actual ride duration. Distance was used as a proxy for ride length.
