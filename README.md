@@ -6,7 +6,7 @@
 - **Date:** 2025-07-26
 
 ---
-#### **Introduction**
+### **Introduction**
 
 The Purpose of this project  was to conduct a comprehensive analysis of the Uber Fares Dataset. The goal was to gather insights about fares amounts and  ride patterns, and other important metrics. This  This involved many consecutive processes of data cleaning, feature engineering, and the use of an interactive Power BI dashboard to visualize the findings.
 
@@ -15,7 +15,7 @@ Initially, the raw dataset was processed using Python for extensive cleaning and
 *   **Primary Tools:** Python(Jupyter Notebook) with (Pandas, NumPy, Matplotlib, Seaborn) and Microsoft Power BI.
 *   **Dataset:** Uber Fares Dataset sourced from Kaggle.
 
-#### **Methodology**
+### **Methodology**
 
 The First step was loading, understanding, and cleaning the data using a Jupyter Notebook with Python.
 
@@ -209,7 +209,7 @@ The final, enriched dataset was exported as `enhanced_uber_fares.csv`, ready for
 df.to_csv('enhanced_uber_fares.csv', index=False)
 ```
 
-#### Analysis & Results
+### Analysis & Results
 
 **Fare Distribution:** The distribution of fares is right-skewed, with the vast majority of rides costing between $5 and $25.
 ![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/output2.png)
@@ -219,37 +219,48 @@ df.to_csv('enhanced_uber_fares.csv', index=False)
 
 #### **PowerBI Results**
 Iniatial Data analysis with Power BI
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%162805.png)
-##### Final Dashboard
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%163127.png)
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20162805.png)
+
+#### Final Dashboard
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20163127.png)
 
 *   **Hourly Trends:** Ride volume exhibits a clear bimodal pattern, peaking during the morning commute (around 8 AM) and again during the evening rush (5-7 PM). The highest peak occurs in the evening.
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%163344.png)
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20163344.png)
+
 *Peak hours button selected*
 
 *   **Daily Trends:** Fridays and Saturdays are the busiest days of the week, indicating higher demand for leisure and social travel. Mid-week days (Tuesday-Thursday) show consistent commuter patterns.
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164305.png)
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20164305.png)
+
 *Distance traveled and Amount spent during the week*
 
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164026.png)
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20164026.png)
+
 *Data on Friday Rides (One of the busiest days)*
 
 *   **Monthly Trends:** The data shows some seasonality, with ride volume generally increasing in the spring and autumn months.
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164551.png)
+
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20164551.png)
 
 **Geospatial Analysis**
 The map visualization shows that the highest concentration of Uber rides originates in dense urban centers, with Manhattan being a primary hotspot.
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%165614.png)
+
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20165614.png)
+
 *Map of the World showing concentration of Uber rides*
-![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%2025-07-26%164951.png)
+
+![](https://github.com/MuhetoJess/Assignment1_PowerBI/blob/main/Screenshots%20and%20Images/Screenshot%202025-07-26%20164951.png)
+
 *Map of Manhattan, New York superimposed with ride data*
 
 The dataset did not include drop_off timestamps. thus it is impossible to calculate the actual ride duration. Distance was used as a proxy for ride length.
 Indeed Weather data was not available in this dataset. Therefore, its potential impact on fare patterns and ride volume could not be investigated.
-#### **Conclusion**
+
+### **Conclusion**
 The Analysis shows predictable and actionable patterns within the Uber Fares dataset.
  Ride demand is not random; it follows distinct hourly, daily, and weekly cycles driven by specific social behavior. The price of fares is primarily by distance traveled. And Lastly the service is most heavily utilized in densely populated urban areas.
-#### **Recommendations**
+
+### **Recommendations**
 There are some recommendations that could be made for Uber based on the analyzed data that could enhance operations and give Uber a competitive advantage
 
 For Example, instead of just applying surge pricing to riders, Uber could offer targeted bonuses to drivers to be active in high-demand zones just before the predictable morning (7-9 AM) and evening (5-7 PM) peaks. This could help stabilize fare prices and reduce rider wait times.
